@@ -1,5 +1,3 @@
-import React from "react";
-
 const Header = ({ setWeatherData }) => {
   return (
     <div className="header-bg ">

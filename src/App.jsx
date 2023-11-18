@@ -1,7 +1,4 @@
-/* eslint-disable react/jsx-key */
 import "./App.css";
-
-// App.js
 import { useState } from "react";
 import axios from "axios";
 import WeatherCard from "./components/WeatherCard";
@@ -159,8 +156,12 @@ const App = () => {
               </svg>
               <p className="font-bold text-[13px]">{formatedDate}</p>
             </div>
-            {list.map((item) => {
-              return <p className="my-3 text-[15px] font-normal">{item}</p>;
+            {list.map((item, ind) => {
+              return (
+                <p key={ind} className="my-3 text-[15px] font-normal">
+                  {item}
+                </p>
+              );
             })}
           </div>
           <div className="flex gap-4 w-full">

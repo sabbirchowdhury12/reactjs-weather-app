@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import dateService from "../service/dateService";
 import { iconService } from "../service/iconService";
 
-/* eslint-disable react/prop-types */
 const WeatherCard = ({ day, sunriseTime, sunsetTime }) => {
   //covert date
   const formattedDate = dateService(day?.dt);
